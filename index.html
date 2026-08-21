@@ -86,7 +86,7 @@
 <header>
   <span class="eyebrow">Calorie Lens</span>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 18 August 2026</p>
+  <p class="updated">Last updated: 21 August 2026</p>
 </header>
 
 <h2>Who we are</h2>
@@ -96,9 +96,11 @@ question, contact <a href="mailto:kamranahmad709@gmail.com">kamranahmad709@gmail
 <div class="summary">
   <h2>The short version</h2>
   <ul>
-    <li>Your meal history, weight and water logs stay <strong>on your phone</strong>. We never receive them.</li>
+    <li>Without an account, your meal history, weight and water logs stay <strong>on your phone</strong>.</li>
+    <li>If you create an account, they are <strong>saved to our servers</strong> so they survive a lost phone and appear when you sign in on a new one. Your meal photos never leave your phone.</li>
     <li>Food photos are sent for analysis and <strong>are not stored</strong> on our servers.</li>
     <li>We create an <strong>anonymous account</strong> so we can count your daily scans. No name or email is needed unless you choose to add one.</li>
+    <li>One device at a time can be signed in to an account.</li>
     <li>We show ads through Google AdMob, which uses advertising identifiers.</li>
     <li>If the app crashes we send a diagnostic report, with personal details stripped out.</li>
     <li>We do not sell your personal information.</li>
@@ -106,16 +108,28 @@ question, contact <a href="mailto:kamranahmad709@gmail.com">kamranahmad709@gmail
 </div>
 
 <h2>What the app stores on your device only</h2>
-<p>The following never leaves your phone. It is held in the app&rsquo;s local storage and is deleted
-when you uninstall the app:</p>
+<p>The following never leaves your phone, whether or not you have an account. It is held in the
+app&rsquo;s local storage and is deleted when you uninstall the app:</p>
 <ul>
-  <li>Your meal log — food names, calories, macronutrients, portion sizes, meal types, times</li>
-  <li>Photos you attach to logged meals</li>
+  <li><strong>Photos you attach to logged meals.</strong> These are never uploaded. A meal viewed
+      on a different device shows without its picture.</li>
+  <li>Your theme preference and your daily streak</li>
+</ul>
+<p>We have no copy of either and cannot recover them for you.</p>
+
+<h2>What is saved to your account</h2>
+<p>If you use Calorie Lens <strong>as a guest</strong>, everything below also stays on your phone
+only, and uninstalling deletes it.</p>
+<p>If you <strong>create an account</strong>, we store the following so it survives a lost phone
+and appears when you sign in on a new one:</p>
+<ul>
+  <li>Your meal log — food names, calories, macronutrients, ingredients, meal types and times</li>
   <li>Body weight entries and water intake</li>
   <li>Your profile — sex, age, height, weight, activity level and goal</li>
-  <li>Your settings — theme, reminder time, custom targets</li>
+  <li>Your calorie and macronutrient targets, and your daily reminder time</li>
 </ul>
-<p>We have no copy of any of it and cannot recover it for you.</p>
+<p>Access is restricted to your own account at the database level. We do not sell it, share it
+with advertisers, or use it to target advertising.</p>
 
 <h2>What is sent to our servers</h2>
 <p><strong>Food photos and text descriptions.</strong> When you scan a meal, the image or the text
@@ -135,8 +149,13 @@ that identifier, in order to enforce the free daily limit and to know whether yo
 subscription. Nothing about <em>what</em> you scanned is recorded — only how many times.</p>
 
 <p><strong>Your email address, only if you choose to add one.</strong> If you create an account to
-keep your subscription across devices, we store the email address and a securely hashed password.
-We do not send marketing email; we do not currently send any email at all.</p>
+keep your history and subscription across devices, we store the email address and a securely
+hashed password. We do not send marketing email. The only email we ever send is a password reset
+link, and only when you ask for one.</p>
+
+<p><strong>An installation identifier.</strong> A random string generated on your device, used to
+enforce one signed-in device per account — see <em>Devices</em> below. It is not a hardware
+identifier, not your advertising ID, and cannot identify you outside Calorie Lens.</p>
 
 <h2>Barcode scanning</h2>
 <p>When you scan a barcode, the barcode number is sent to
@@ -185,13 +204,17 @@ identifier.</p>
 cannot scan photos or barcodes; everything else keeps working.</p>
 
 <h2>Health information</h2>
-<p>Your meal log, body weight and water intake are kept <strong>on your device</strong>. We do not
-receive them, they are not shared with any third party, and they are never used for advertising.</p>
-<p>There is one exception, and it is the moment you run a scan. The photo you take, or the
-description you type — &ldquo;two eggs and toast&rdquo; — is sent for analysis exactly as described
-under <em>What is sent to our servers</em>. It is used to produce that one set of nutrition figures
-and is not stored. It is not attached to your meal log, and your weight and water entries are never
-sent at all.</p>
+<p><strong>Without an account</strong>, your meal log, body weight and water intake stay on your
+device. We do not receive them, and uninstalling the app deletes them.</p>
+<p><strong>With an account</strong>, they are stored on our servers, as listed under <em>What is
+saved to your account</em>. This is health-related information and we treat it accordingly: it is
+restricted to your own account at the database level, it is never shared with any third party, and
+it is never used for advertising.</p>
+<p>Separately, and whether or not you have an account: when you run a scan, the photo you take or
+the description you type — &ldquo;two eggs and toast&rdquo; — is sent for analysis exactly as
+described under <em>What is sent to our servers</em>. It produces one set of nutrition figures and
+is not stored.</p>
+<p>Your meal <strong>photos</strong> are never uploaded, with or without an account.</p>
 
 <div class="callout">
   <p><strong>Calorie Lens is not a medical device.</strong> Nutrition values are AI estimates, not
@@ -199,34 +222,46 @@ sent at all.</p>
   before making significant changes to your diet, particularly if you have a health condition.</p>
 </div>
 
+<h2>Devices</h2>
+<p>Calorie Lens allows one signed-in device per account at a time. When you sign in on a new
+device, any other device signed in to that account is signed out, and that account&rsquo;s meal
+history, weight, profile and reminder are removed from it.</p>
+<p>To do this we store a random identifier for your installation of the app, generated on your
+device. It is not a hardware identifier, it is not your advertising ID, and it cannot be used to
+identify you outside Calorie Lens. It is deleted when you delete your account or uninstall the
+app.</p>
+
 <h2>How long we keep things</h2>
 <ul>
-  <li>On-device data: until you delete it in the app or uninstall the app</li>
+  <li>On-device data, including meal photos: until you delete it in the app or uninstall</li>
+  <li>Meal log, weight, water, profile and reminder, if you have an account: until you delete the
+      entry, or delete your account</li>
   <li>Scan counts: retained against your anonymous identifier while your account exists</li>
   <li>Account email, if you added one: until you ask us to delete it</li>
-  <li>Food photos: not retained</li>
+  <li>Food photos sent for analysis: not retained</li>
 </ul>
 
 <h2>Your rights</h2>
 <p>Depending on where you live, you may have the right to access, correct, export or delete your
 personal information, and to object to processing.</p>
-<p>Because almost everything is stored on your device, you can exercise most of these yourself:
-<strong>History → Clear all</strong> deletes your meal log, and uninstalling removes everything
-local. Premium subscribers can export the full log as CSV from <strong>Trends → Export</strong>.
-For deletion, see <a href="#data-deletion">Deleting your data and your account</a> below.</p>
+<p>You can exercise most of these yourself: <strong>History → Clear all</strong> deletes your meal
+log, on this device and from your account. Premium subscribers can export the full log as CSV from
+<strong>Trends → Export</strong>. For deletion, see
+<a href="#data-deletion">Deleting your data and your account</a> below.</p>
 <h2 id="data-deletion">Deleting your data and your account</h2>
-<p>Almost everything Calorie Lens holds is on your phone, and you can erase it yourself at any
-time:</p>
+<p>You can erase most of it yourself at any time:</p>
 <ul>
-  <li><strong>Your meal log</strong> — History → Clear all.</li>
-  <li><strong>Everything stored locally</strong>, including your profile, weight, water and
-      settings — uninstall the app.</li>
+  <li><strong>Your meal log</strong> — History → Clear all. This deletes it from your account too,
+      not just from this device.</li>
+  <li><strong>Everything stored locally</strong>, including your meal photos — uninstall the app.
+      Note that if you have an account, uninstalling does <strong>not</strong> delete what is on
+      our servers; use Delete account below for that.</li>
 </ul>
 <p>To delete everything at once, including the account itself:</p>
 <ul>
   <li><strong>In the app</strong> — Profile → Account → <strong>Delete account</strong>. This
-      immediately and permanently removes your anonymous account identifier, your daily scan
-      count, your subscription status and your email address if you added one, along with
+      immediately and permanently removes your meal history, weight, water, profile, reminder,
+      account identifier, daily scan count, subscription status and email address, along with
       everything stored locally. It cannot be undone.</li>
   <li><strong>By email</strong> — if you can no longer open the app, write to
       <a href="mailto:kamranahmad709@gmail.com?subject=Delete%20my%20Calorie%20Lens%20account">kamranahmad709@gmail.com</a>
@@ -248,7 +283,7 @@ will delete it.</p>
   <thead><tr><th>Provider</th><th>Purpose</th><th>Their policy</th></tr></thead>
   <tbody>
     <tr><td>Google (Gemini AI)</td><td>Analyses food photos and descriptions</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
-    <tr><td>Supabase</td><td>Anonymous accounts, scan counts</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+    <tr><td>Supabase</td><td>Accounts, meal and profile storage, scan counts</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
     <tr><td>Google AdMob</td><td>Advertising</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
     <tr><td>RevenueCat</td><td>Subscription receipt validation</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
     <tr><td>Open Food Facts</td><td>Barcode product lookup</td><td><a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a></td></tr>
